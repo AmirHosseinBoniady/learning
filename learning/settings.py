@@ -31,7 +31,9 @@ INSTALLED_APPS = [
     'Amir',
     'Dev',
     'amirhossein',
+    'pooya',
     ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -48,7 +50,8 @@ ROOT_URLCONF = 'learning.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'Dev/template'), os.path.join(BASE_DIR, 'amirhossein/template'), os.path.join(BASE_DIR, 'Amir/template')],
+        'DIRS': [os.path.join(BASE_DIR, 'Dev/template'), os.path.join(BASE_DIR, 'amirhossein/template'), os.path.join(BASE_DIR, 'Amir/template'), os.path.join(BASE_DIR,"pooya/template")],
+
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

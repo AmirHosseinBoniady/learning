@@ -5,6 +5,7 @@ from .models import Table
 
 def table(request):
     query = Table.objects.all()
+    print(query)
     context = {
         "data" : query , 
     }

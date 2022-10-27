@@ -56,7 +56,7 @@ ROOT_URLCONF = 'learning.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'Dev/template')],
+        'DIRS': [os.path.join(BASE_DIR, 'Dev/template'), os.path.join(BASE_DIR, 'amirhossein/template')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
